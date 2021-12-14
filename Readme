@@ -1,0 +1,12 @@
+Para compilar os arquivos, é necessário entrar no diretório /src pelo terminal e rodar o comando
+    make
+
+Caso seja desejado checar os arquivos com o cpplint, cppcheck e checar o se existem problemas relacionados a memória no programa, basta rodar:
+    make pilha .cppcheck .cpplint .valgrind
+esse comando também efetuará a compilação dos códigos.
+
+Dentro do arquivo test_pilha.cpp está um teste da pilha para lista encadeada e, comentado, um teste para a pilha implementada com vetor de inteiros, para testar a pilha como vetor de inteiros, comente ou apague o trecho de código relativo à lista encadeada na função main()
+
+As funções de retornar o elemento do topo retornam o menor valor inteiro possível em caso de pilha vazia (biblioteca <limits>). A função displayTopo é utilizada para printar o elemento do topo na tela do usuário ou informar que a pilha está vazia, se for o caso.
+
+Para rodar o executável basta rodar, ainda no diretório /src, o comando ./pilha (Linux) ou pilha.exe (Windows).
